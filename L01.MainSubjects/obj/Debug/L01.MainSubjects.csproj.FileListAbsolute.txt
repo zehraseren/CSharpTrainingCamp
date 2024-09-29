@@ -1,0 +1,7 @@
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\bin\Debug\L01.MainSubjects.exe.config
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\bin\Debug\L01.MainSubjects.exe
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\bin\Debug\L01.MainSubjects.pdb
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\obj\Debug\L01.MainSubjects.csproj.AssemblyReference.cache
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\obj\Debug\L01.MainSubjects.csproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\obj\Debug\L01.MainSubjects.exe
+C:\Users\Hp\Desktop\Coding\CSharpTrainingCamp\L01.MainSubjects\obj\Debug\L01.MainSubjects.pdb
