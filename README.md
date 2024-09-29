@@ -1,0 +1,1 @@
+#### Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjBHu2xXNPmFMvGKVHA_ijjrgUyNIXr&si=cLyDHRSu0go-YLPt) online kursundan, C# üzerine eğitim aldığım ve öğrenirken yaptıklarımı notlar aldığım repositorydir.
