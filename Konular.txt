@@ -6,3 +6,7 @@
 2. Ders Konularý
 - Variables | Deðiþkenler (String, Int, Char)
 - Klavye Veri Giriþleri Ve Dönüþümleri
+
+3. Ders Konularý
+- Karar Yapýlarý (If Else)
+- Switch Case
