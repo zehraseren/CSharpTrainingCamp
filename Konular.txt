@@ -16,3 +16,7 @@
 - For Döngüsü ile Karar Yapýlarý
 - While Döngüsü
 - While Döngüsü ile Karar Yapýlarý
+
+5. Ders Konularý
+- DÖngülerle Pratik Uygulamalar
+- Yýldýzlarla Þekil Çizme
