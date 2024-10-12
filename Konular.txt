@@ -20,3 +20,9 @@
 5. Ders Konularý
 - DÖngülerle Pratik Uygulamalar
 - Yýldýzlarla Þekil Çizme
+
+6. Ders Konularý
+- Temel Dizi Örnekleri
+- Dizideki Elemanlarý Listeleme
+- Dizi Metotlarý
+- Kullanýcýdan Deðer Alarak Dizi Oluþturma
