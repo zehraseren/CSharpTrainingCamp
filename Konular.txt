@@ -1,3 +1,5 @@
+*** MODÜL 101 KONULARI
+
 1. Ders Konularý
 - Yazdýrma Komutlarý
 - String Deðiþkenler
@@ -18,7 +20,7 @@
 - While Döngüsü ile Karar Yapýlarý
 
 5. Ders Konularý
-- DÖngülerle Pratik Uygulamalar
+- Döngülerle Pratik Uygulamalar
 - Yýldýzlarla Þekil Çizme
 
 6. Ders Konularý
@@ -26,3 +28,9 @@
 - Dizideki Elemanlarý Listeleme
 - Dizi Metotlarý
 - Kullanýcýdan Deðer Alarak Dizi Oluþturma
+
+7. Ders Konularý
+- Foreach Döngüsü
+- Ýlk 7 Konunun Tekrarý Niteliðinde Örnek
+
+*** MODÜL 201 KONULARI
