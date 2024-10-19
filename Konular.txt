@@ -33,4 +33,15 @@
 - Foreach Döngüsü
 - Ýlk 7 Konunun Tekrarý Niteliðinde Örnek
 
+8. Ders Konularý
+- Metotlar
+- Geriye Deðer Döndürmeyen Metotlar
+- Geriye Deðer Döndürmeyen String Metotlar
+- Geriye Deðer Döndürmeyen Int Metotlar
+- Geriye Deðer Döndüren Metotlar
+- Geriye Deðer Döndüren String Metotlar
+- Geriye Deðer Döndüren Int Metotlar
+- Örnek Uygulama
+
+
 *** MODÜL 201 KONULARI
