@@ -45,3 +45,6 @@
 
 
 *** MODÜL 201 KONULARI
+
+9. Ders Konularý
+- Ado.Net ile Batabase baðlantýsý
