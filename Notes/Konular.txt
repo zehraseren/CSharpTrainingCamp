@@ -1,50 +1,53 @@
-*** MODÜL 101 KONULARI
+*** MODÃœL 101 KONULARI
 
-1. Ders Konuları
-- Yazdırma Komutları
-- String Değişkenler
-- Int Değişkenler
+1. Ders KonularÄ±
+- YazdÄ±rma KomutlarÄ±
+- String DeÄŸiÅŸkenler
+- Int DeÄŸiÅŸkenler
 
-2. Ders Konuları
-- Variables | Değişkenler (String, Int, Char)
-- Klavye Veri Girişleri Ve Dönüşümleri
+2. Ders KonularÄ±
+- Variables | DeÄŸiÅŸkenler (String, Int, Char)
+- Klavye Veri GiriÅŸleri Ve DÃ¶nÃ¼ÅŸÃ¼mleri
 
-3. Ders Konuları
-- Karar Yapıları (If Else)
+3. Ders KonularÄ±
+- Karar YapÄ±larÄ± (If Else)
 - Switch Case
 
-4. Ders Konuları
-- For Döngüsü
-- For Döngüsü ile Karar Yapıları
-- While Döngüsü
-- While Döngüsü ile Karar Yapıları
+4. Ders KonularÄ±
+- For DÃ¶ngÃ¼sÃ¼
+- For DÃ¶ngÃ¼sÃ¼ ile Karar YapÄ±larÄ±
+- While DÃ¶ngÃ¼sÃ¼
+- While DÃ¶ngÃ¼sÃ¼ ile Karar YapÄ±larÄ±
 
-5. Ders Konuları
-- Döngülerle Pratik Uygulamalar
-- Yıldızlarla Şekil Çizme
+5. Ders KonularÄ±
+- DÃ¶ngÃ¼lerle Pratik Uygulamalar
+- YÄ±ldÄ±zlarla Åekil Ã‡izme
 
-6. Ders Konuları
-- Temel Dizi Örnekleri
-- Dizideki Elemanları Listeleme
-- Dizi Metotları
-- Kullanıcıdan Değer Alarak Dizi Oluşturma
+6. Ders KonularÄ±
+- Temel Dizi Ã–rnekleri
+- Dizideki ElemanlarÄ± Listeleme
+- Dizi MetotlarÄ±
+- KullanÄ±cÄ±dan DeÄŸer Alarak Dizi OluÅŸturma
 
-7. Ders Konuları
-- Foreach Döngüsü
-- İlk 7 Konunun Tekrarı Niteliğinde Örnek
+7. Ders KonularÄ±
+- Foreach DÃ¶ngÃ¼sÃ¼
+- Ä°lk 7 Konunun TekrarÄ± NiteliÄŸinde Ã–rnek
 
-8. Ders Konuları
+8. Ders KonularÄ±
 - Metotlar
-- Geriye Değer Döndürmeyen Metotlar
-- Geriye Değer Döndürmeyen String Metotlar
-- Geriye Değer Döndürmeyen Int Metotlar
-- Geriye Değer Döndüren Metotlar
-- Geriye Değer Döndüren String Metotlar
-- Geriye Değer Döndüren Int Metotlar
-- Örnek Uygulama
+- Geriye DeÄŸer DÃ¶ndÃ¼rmeyen Metotlar
+- Geriye DeÄŸer DÃ¶ndÃ¼rmeyen String Metotlar
+- Geriye DeÄŸer DÃ¶ndÃ¼rmeyen Int Metotlar
+- Geriye DeÄŸer DÃ¶ndÃ¼ren Metotlar
+- Geriye DeÄŸer DÃ¶ndÃ¼ren String Metotlar
+- Geriye DeÄŸer DÃ¶ndÃ¼ren Int Metotlar
+- Ã–rnek Uygulama
 
 
-*** MODÜL 201 KONULARI
+*** MODÃœL 201 KONULARI
 
-9. Ders Konuları
-- Ado.Net ile Batabase bağlantısı
+9. Ders KonularÄ±
+- Ado.Net ile Batabase baÄŸlantÄ±sÄ±
+
+10. Ders KonularÄ±
+- Database CRUD iÅŸlemleri
