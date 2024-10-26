@@ -30,6 +30,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L09.DatabaseProject", "L09.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.CollectionInitializer", "Notes\01.CollectionInitializer\01.CollectionInitializer.csproj", "{458E744A-9CEB-4368-B820-6E3ED3E7979D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "L10.DabataseCRUD", "L10.DabataseCRUD\L10.DabataseCRUD.csproj", "{6C73EC22-97F9-4E16-9A89-06C39E2797BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -76,6 +78,10 @@ Global
 		{458E744A-9CEB-4368-B820-6E3ED3E7979D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{458E744A-9CEB-4368-B820-6E3ED3E7979D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{458E744A-9CEB-4368-B820-6E3ED3E7979D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C73EC22-97F9-4E16-9A89-06C39E2797BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C73EC22-97F9-4E16-9A89-06C39E2797BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C73EC22-97F9-4E16-9A89-06C39E2797BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C73EC22-97F9-4E16-9A89-06C39E2797BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
