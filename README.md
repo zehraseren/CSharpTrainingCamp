@@ -4,6 +4,8 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 
 # Repo İçerikleri:
 
+## ✨MODÜL 101
+
 ## 1. Temel Konular | Main Subjects 📚
 + Bu projede yazdırma komutları, string ve int değişkenler bahsedilmiştir. `Console.WriteLine()` yazdırma komutu ile değişkenlerin ekrana yazılışı gösterilmiştir.
 + Temel C# yapılarını ve veri tiplerini anlamak, programlamanın temellerini kavramak için kritik öneme sahiptir.📖
@@ -32,6 +34,8 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + Bu projede foreach döngüsünden bahsedilmiştir ve önceki konular da baz alarak örnek yapılmıştır.
 + Foreach döngüsü, koleksiyonlar üzerinde basit ve etkili bir şekilde iterasyon yaparak kodun okunabilirliğini artırır.🔍
 
+## ✨MODÜL 201
+
 ## 8. Metotlar | Methods 🛠️
 + Bu projede geriye değer döndüren ve geriye değer döndürmeyen metotlardan bahsedilmiştir. Bu iki tür metota özgü örnekler yapılmıştır.
 + Metotlar, kod tekrarını azaltarak modülerlik sağlar ve belirli görevlerin ayrı birimlerde yönetilmesine imkan tanır.🔧
@@ -39,3 +43,22 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 ## 9. Veritabanı Projesi | Database Project 🗃️
 + Bu projede bir C# proje ile SQL veri tabanı uygulamasını Ado.Net kullanarak bağlantı kurulumundan bahsedilmiştir.
 + Veritabanı projeleri, verilerin kalıcı olarak saklanmasını ve işlenmesini sağlayarak dinamik uygulamalar geliştirmede temel bir rol oynar.🗄️
+
+## ✨MODÜL 301
+
+## 10. Veritaban CRUD | Database CRUD 🚀
++ `Create` ➡️ Veritabanına yeni veri ekleme işlemi. `INSERT INTO` sorgusu veya ORM ile yapılır.
++ `Read` ➡️ Verileri okuma ve görüntüleme işlemi. `SELECT` sorgusu ile gerçekleştirilir.
++ `Update` ➡️ Mevcut veriyi güncelleme işlemi. `UPDATE` sorgusu kullanılır.
++ `Delete` ➡️ Veri silme işlemi. `DELETE FROM` sorgusu ile yapılır.
+
+> 💡CRUD işlemlerini veritabanı yönetimi için Entity Framework gibi ORM araçları veya `SqlCommand` gibi class'larla kolayca uygulanabilmektedir.
+
+## 11. Nesne Yönelimli Programlama Modülü | OOP Module 🛠️
++ `Sınıflar | Classes` ➡️ Nesnelerin kalıbı olarak kullanılır. Her class, nesnelerin sahip olduğu özellikleri ve davranışları tanımlar.
++ `Nesneler | Objects` ➡️ Class'lardan türetilen gerçek varlıklardır; class'ların örnekleridir.
++ `Kapsülleme | Encapsulation` ➡️ Verileri ve işlevleri bir class içinde toplayarak gizliliği sağlar.
++ `Kalıtım | Inheritance` ➡️ Bir class'ın başka bir class'ın özelliklerini miras almasını sağlar.
++ `Çok Biçimlilik | Polymorphism` ➡️ Aynı işlemin farklı class'larda farklı biçimlerde uygulanmasını sağlar.
++ `Soyutlama | Abstraction` ➡️ Gereksiz detayları gizleyerek yalnızca gerekli bilgileri öne çıkarır.
+> 💡OOP programlamada esneklik sağlar, kodu daha düzenli ve anlaşılır hale getirir.
