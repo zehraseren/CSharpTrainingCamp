@@ -10,5 +10,6 @@ namespace CSTC301.EntityLayer.Concrete
         public string CustomerDistrict { get; set; }
         public string CustomerCity { get; set; }
         public List<Order> Orders { get; set; }
+        public bool CustomerStatus { get; set; }
     }
 }
