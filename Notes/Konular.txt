@@ -56,3 +56,15 @@
 
 11. OOP Modülü
 - N-Tier Architecture 
+
+12. OOP Modülü
+- Data Access Layer
+- Context Class
+
+13. OOP Modülü
+- Migration
+- Abstract Interface
+
+14. ORM Yapısı
+- Entity Framework DbFirst
+- Model Oluşturma
