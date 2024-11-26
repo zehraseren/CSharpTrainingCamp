@@ -54,7 +54,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 
 > 💡CRUD işlemlerini veritabanı yönetimi için Entity Framework gibi ORM araçları veya `SqlCommand` gibi class'larla kolayca uygulanabilmektedir.
 
-## 11. Nesne Yönelimli Programlama Modülü | OOP Module 🛠️
+## 11. Nesne Yönelimli Programlama Modülü | OOP Module: N-Tier Architecture Entity Layer🛠️
 + `Sınıflar | Classes` ➡️ Nesnelerin kalıbı olarak kullanılır. Her class, nesnelerin sahip olduğu özellikleri ve davranışları tanımlar.
 + `Nesneler | Objects` ➡️ Class'lardan türetilen gerçek varlıklardır; class'ların örnekleridir.
 + `Kapsülleme | Encapsulation` ➡️ Verileri ve işlevleri bir class içinde toplayarak gizliliği sağlar.
@@ -62,3 +62,123 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + `Çok Biçimlilik | Polymorphism` ➡️ Aynı işlemin farklı class'larda farklı biçimlerde uygulanmasını sağlar.
 + `Soyutlama | Abstraction` ➡️ Gereksiz detayları gizleyerek yalnızca gerekli bilgileri öne çıkarır.
 > 💡OOP programlamada esneklik sağlar, kodu daha düzenli ve anlaşılır hale getirir.
+
++ N-Tier Architecture'da Entity Layer (Varlık Katmanı), genellikle yazılım geliştirme sürecinde verilerin temsili ve işlenmesiyle ilgili işlemleri ele alan bir katmandır. Bu katman, uygulamanın temel veri modelini barındırır ve diğer katmanlar arasında veri alışverişini kolaylaştırır.
+
+##### Özellikler:
+1. `Veri Temsili:` Uygulamanın işlediği gerçek dünya nesnelerinin (örneğin, Kullanıcı, Sipariş, Ürün) yazılım dünyasındaki temsilini sağlar. Genellikle sınıflar veya yapılar halinde tanımlanır.
+2. `Bağımsızlık:` Entity Layer, genellikle uygulamanın iş mantığı ve veri erişiminden bağımsız olarak tasarlanır, böylece diğer katmanlarla minimum bağımlılık yaratır.
+3. `Veri Doğrulama ve Özellikler:` Veri üzerinde temel doğrulama kurallarını veya özellikleri içerebilir (örneğin, veri türleri, minimum/maksimum değerler).
+
+##### Kullanım:
++ `Data Transfer Objects (DTO):` Verilerin, farklı katmanlar arasında taşınması için kullanılır.
++ `ORM Entegrasyonu:` Entity Layer genellikle bir ORM (Object-Relational Mapping) aracıyla (ör. Entity Framework, Hibernate) veritabanı tablolarıyla ilişkilendirilir.
++ `Düzenlilik ve Modülerlik:` Uygulamanın modüler olmasını sağlayarak kodun okunabilirliğini ve bakımını artırır.
+
+##### Avantajlar:
++ `Yeniden Kullanılabilirlik:` Aynı varlık sınıfları birden çok katmanda kullanılabilir.
++ `Sadelik:` İş mantığı ve veri erişim mantığını soyutlayarak yalnızca veriyi temsil eder.
++ `Bağımsızlık:` Katmanlar arası bağımlılıkları azaltır, farklı teknolojilerle kolayca entegre olabilir.
+
+<strong>📌`Entity Layer, iyi bir N-Tier Architecture tasarımında kritik bir rol oynar, çünkü tüm sistemin veri modellemesini merkezi bir yerde yönetir.`</strong>
+
+## 12. Nesne Yönelimli Programlama Modülü | OOP Module: Data Access Layer & Context Class 🛠️
+### Data Access Layer (DAL)
++ Data Access Layer (Veri Erişim Katmanı), bir uygulamada veritabanıyla etkileşim kurmak için kullanılan bir katmandır. Uygulamanın diğer katmanlarından veri erişim detaylarını soyutlayarak, veritabanı işlemlerinin güvenli ve düzenli bir şekilde gerçekleştirilmesini sağlar.
+
+##### Görevleri:
++ `Veritabanı İşlemleri:` CRUD (Create, Read, Update, Delete) işlemlerini gerçekleştirir.
++ `Soyutlama:` Veritabanına erişimle ilgili mantığı iş mantığından ayırır.
++ `Performans Optimizasyonu:` Verimli sorgular oluşturarak uygulamanın performansını artırır.
+
+##### Avantajları:
++ Kodun tekrar kullanılabilirliğini artırır.
++ Veri erişimini yönetmek için merkezi bir yapı sunar.
++ Veritabanı değişikliklerini uygulamanın geri kalanından izole eder.
+
+### Context Class
++ Context Class, genellikle bir ORM (Object-Relational Mapping) aracıyla kullanılır ve uygulamayla veritabanı arasındaki köprüyü sağlar. En yaygın örneği, Entity Framework'te kullanılan `DbContext` sınıfıdır.
+
+##### Görevleri:
++ `Veritabanı Bağlantısı:` Veritabanı ile bağlantıyı yönetir.
++ `Tablo-Model Eşleştirmesi:` Veritabanındaki tablolarla, uygulama modellerini eşleştirir.
++ `Sorgular ve İşlemler:` Veritabanı sorgularının yürütülmesini ve değişikliklerin kaydedilmesini sağlar.
+
+##### Avantajları:
++ Veritabanı işlemlerinin kolayca kodlanmasını sağlar.
++ Birden çok veri kaynağına bağlanmak için genişletilebilir.
++ ORM araçlarının sağladığı avantajlardan yararlanır.
+
+##### Data Access Layer ve Context Class Arasındaki İlişki
++ Context Class, DAL için temel sağlar. Veritabanına bağlantıyı ve modellerle tablolar arasındaki ilişkiyi yönetir.
++ DAL, Context Class kullanarak uygulamanın diğer katmanlarına veritabanı işlemleri için bir API sunar.
+
+<strong>📌`Bu yapı, N-Tier Architecture'ın modülerliğini ve bakım kolaylığını destekler.`</strong>
+
+## 13. Nesne Yönelimli Programlama Modülü | OOP Module: Migration & Abstract 🛠️
+### Migration (Veritabanı Geçişleri)
++ Migration, veritabanı şemasındaki (tablolar, kolonlar, ilişkiler) değişiklikleri uygulamanın kod tabanındaki değişikliklerle senkronize etmeyi sağlayan bir yöntemdir. Bu kavram genellikle Entity Framework gibi ORM araçlarında kullanılır.
+
+##### Görevleri:
++ `Şema Yönetimi:` Veritabanı şemasını versiyonlayarak değişiklikleri düzenli bir şekilde uygulamanızı sağlar.
++ `Değişiklik Kaydı:` Tabloların eklenmesi, kolonların değiştirilmesi veya ilişkilerin düzenlenmesi gibi işlemleri kaydeder.
++ `Geri Alma:` Uygulanan değişiklikler gerektiğinde geri alınabilir.
+
+##### Avantajları:
++ Kod ve veritabanı arasında senkronizasyon sağlar.
++ Veritabanı değişikliklerini ekip içerisinde izlenebilir ve yönetilebilir kılar.
++ Otomatik şema oluşturma ve güncelleme sağlar.
+
+### Abstract (Soyutlama)
++ Abstract, nesne yönelimli programlamada kullanılan bir yapı olup, temel olarak soyut sınıflar veya metotlar tanımlamak için kullanılır. Bu yapı, ortak özelliklerin ve davranışların alt sınıflar tarafından zorunlu olarak uygulanmasını sağlar.
+
+##### Soyut Sınıf:
++ `Tanım:` Kendi başına örneklenemez (instance oluşturulamaz). Alt sınıflara temel bir yapı sağlar.
++ `Görev:` Alt sınıflarda uygulanması gereken metotları ve ortak özellikleri tanımlar.
+
+##### Avantajları:
++ Kodun tekrarını önler ve ortak davranışları merkezileştirir.
++ Polimorfizm (çok biçimlilik) sağlar.
++ Alt sınıflar arasında tutarlılığı zorunlu kılar.
+
+##### Data Access Layer ve Context Class Arasındaki İlişki
++ `Migration:` Veritabanı şemasını yönetmek için kullanılır ve kod-veritabanı uyumunu sağlar.
++ `Abstract:` Yazılımda soyutlama yaparak ortak davranışların düzenli bir şekilde alt sınıflar tarafından uygulanmasını sağlar.
+
+<strong>📌`Her iki kavram, farklı alanlarda düzenlilik ve yapı kazandırmayı hedefler. Migration, veri yönetimi odaklıdır; Abstract, yazılımın tasarımı ve modülerliği ile ilgilidir.`</strong>
+
+## 14. Nesne Yönelimli Programlama Modülü | ORM Structure: Entity Framework DbFirst & Create Model 🛠️
++ Entity Framework DbFirst ve Model Oluşturma, mevcut bir veritabanından model ve context sınıfları oluşturarak veritabanı ile kod arasında bir bağlantı sağlar. Bu yöntem, veritabanı tasarımının uygulama kodundan önce yapıldığı senaryolarda kullanılır.
+
+### DbFirst Nedir?
++ `Tanım:` Mevcut bir veritabanı şemasını temel alarak Entity Framework modellerini (entity sınıfları ve context sınıfını) otomatik olarak oluşturma yöntemidir.
++ `Kullanım Senaryosu:` Önceden oluşturulmuş bir veritabanı yapısının olduğu durumlarda tercih edilir.
++ `Amaç:` Veritabanındaki tablolar, ilişkiler ve diğer yapılar kodla uyumlu hale getirilir.
+
+### DbFirst Avantajları ve Dezavantajları
+#### Avantajları:
+1. `Hızlı Başlangıç:` Mevcut veritabanı yapısını hızlıca kod tarafına yansıtabilirsiniz.
+2. `Senkrone Olarak Güncelleme:` Veritabanı değişikliklerini yansıtmak için modeli yeniden oluşturabilirsiniz.
+3. `Manuel Kodlamayı Azaltır:` Tablolar ve ilişkiler otomatik olarak sınıflara çevrilir.
+
+#### Dezavantajları:
+1. `Kod Üzerinde Kontrolün Kısıtlanması:` Otomatik oluşturulan sınıflarda manuel düzenleme yapmak sorunlara yol açabilir.
+2. `Geliştirme Sürecinde Esneklik Kaybı:` Veritabanı tasarımı değişirse, tekrar model oluşturmak gerekebilir.
+
+##### DbFirst ve CodeFirst Karşılaştırması
+|Özellik|DbFirst|CodeFirst|
+|-------|--------|---------|
+|Başlangıç Noktası|Veritabanı tasarımı önce yapılır.|Kod yazılarak veritabanı otomatik oluşturulur.|
+|Esneklik|Daha az esnek, veritabanı odaklıdır.|Daha esnek, kod odaklıdır.|
+|Uygulama Senaryosu|Var olan veritabanını kullanma.|Yeni projelerde, veritabanı tasarımına kodla başlama.|
+
+<strong>📌`DbFirst, mevcut bir veritabanını projeye entegre etmek için ideal bir yöntemdir ve özellikle büyük projelerde zamandan tasarruf sağlar.[](url)`</strong>
+
+## 15. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Project 🛠️
+
+
+## 16. Nesne Yönelimli Programlama Modülü | Entity Framework: Project 🛠️
+
+
+## 17. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Linq 🛠️
+
