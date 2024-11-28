@@ -172,13 +172,85 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 |Esneklik|Daha az esnek, veritabanı odaklıdır.|Daha esnek, kod odaklıdır.|
 |Uygulama Senaryosu|Var olan veritabanını kullanma.|Yeni projelerde, veritabanı tasarımına kodla başlama.|
 
-<strong>📌`DbFirst, mevcut bir veritabanını projeye entegre etmek için ideal bir yöntemdir ve özellikle büyük projelerde zamandan tasarruf sağlar.[](url)`</strong>
+<strong>📌`DbFirst, mevcut bir veritabanını projeye entegre etmek için ideal bir yöntemdir ve özellikle büyük projelerde zamandan tasarruf sağlar.`</strong>
 
 ## 15. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Project 🛠️
+Entity Framework (EF), bir .NET nesne-ilişkisel eşleme (ORM) aracıdır ve veritabanı işlemlerini daha kolay bir şekilde yapılmasına olanak saplar. Entity Framework, veritabanı ile etkileşim kurarken kullanılan çeşitli yöntemler sunar.
 
+###### İşte en sık kullanılan EF yöntemlerinin kısa açıklamaları:
+##### CRUD İşlemleri
+|Metot|Görevi|
+|-------|--------|
+|Add|Veritabanına yeni bir nesne eklemek için kullanılır.|
+|Find|Birincil anahtarına göre bir nesneyi getirir.|
+|Update|Mevcut bir nesnenin güncellenmesi için kullanılır. Değişiklikler otomatik olarak izlenir.|
+|Remove|Bir nesneyi veritabanından siler.|
+|SaveChanges|Yapılan tüm değişiklikleri veritabanına kaydeder.|
+
+##### Sorgulama (Querying)
+|Metot|Görevi|
+|-------|--------|
+|ToList|Bir sorgunun sonucunu liste olarak döner.|
+|Where|Belirli bir koşula göre filtreleme yapar.|
+|First / FirstOrDefault|İlk kaydı döner veya eğer kayıt yoksa `null` döner.|
+|Single / SingleOrDefault|Tek bir kayıt döner; eğer birden fazla kayıt varsa hata fırlatır. Hiç yoksa `null` döner.|
+|OrderBy / OrderByDescending|Sıralama işlemleri için kullanılır.|
+|Include|İlişkili tabloları yüklemek için kullanılır (Eager Loading).|
+|Count|Sorgudan dönen kayıtların sayısını döner.|
+
+##### Asenkron Metotlar
+|Metot|Görevi|
+|-------|--------|
+|AddAsync|Yeni bir nesneyi asenkron olarak ekler.|
+|FindAsync|Asenkron olarak birincil anahtara göre nesneyi bulur.|
+|ToListAsync|Asenkron olarak liste döner.|
+|FirstOrDefaultAsync / SingleOrDefaultAsync|Belirli bir koşula göre ilk kaydı veya tek kaydı asenkron olarak döner.|
+
+<strong>📌`Entity Framework yöntemleri ile hem basit hem de karmaşık veritabanı işlemlerini kolayca gerçekleştirebilirsiniz. Bu yöntemler LINQ ile birlikte güçlü bir araç seti sunar.`</strong>
 
 ## 16. Nesne Yönelimli Programlama Modülü | Entity Framework: Project 🛠️
-
+CRUD işlemleri uygulanarak Location tablosundaki işlemler yapıldı.
 
 ## 17. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Linq 🛠️
+LINQ (Language Integrated Query), C# ve .NET dillerinde kullanılan güçlü bir sorgulama mekanizmasıdır. LINQ kullanılarak veritabanları, koleksiyonlar, XML ve diğer veri kaynakları üzerinde kolayca sorgulamalar yapılabilir.
+
+###### İşte LINQ ile ilgili sık sorulan sorular ve bunlara dair kısa açıklamalar:
+### Temel LINQ Soruları
+1. LINQ nedir?
++ LINQ, verileri sorgulamak için kullanılan bir sorgulama dilidir. SQL'e benzer şekilde çalışır ancak farklı veri kaynaklarını (koleksiyonlar, veritabanları, XML vb.) sorgulamak için kullanılır.
+
+2. LINQ Türleri Nelerdir?
+
+|    |Açıklama|
+|-------|--------|
+|LINQ to Objects|Koleksiyonlar üzerinde çalışır.|
+|LINQ to SQL|SQL Server veritabanları ile çalışır.|
+|LINQ to XML|XML verileri ile çalışır.|
+|LINQ to Entities|Entity Framework veritabanı sorguları için kullanılır.|
+
+3. LINQ Sorgularında Kullanılan Temel Operatörler Nelerdir?
+
+|    |Açıklama|
+|-------|--------|
+|Select|Veri seçmek için kullanılır.|
+|Where|Filtreleme yapar.|
+|OrderBy / OrderByDescending|Sıralama yapar.|
+|GroupBy|Gruplama yapar.|
+|Join|Farklı veri kaynaklarını birleştirir.|
+
+4. LINQ ile SQL Arasındaki Farklar Nelerdir?
++ SQL sadece veritabanı sorguları için kullanılırken LINQ, her tür veri kaynağı üzerinde çalışabilir.
++ LINQ, C# diline entegredir; bu nedenle IntelliSense gibi özellikler sunar.
+
+### Performans
+
+|Soru|Cevap|
+|-------|--------|
+| LINQ performansı nasıldır?| LINQ sorguları okunabilirlik açısından avantajlıdır ancak bazı durumlarda performans açısından optimize edilmelidir. Örneğin, büyük veri setlerinde sorgular mümkünse `ToList()` veya `AsEnumerable()` gibi yöntemler kullanmadan yapılmalıdır.|
+|LINQ sorguları nasıl optimize edilir?|Filtreleme işlemlerini mümkün olduğunca erken yapılmalı. Gereksiz veri taşımayı önlemek için sadece ihtiyaç duyulan alanlar `Select` ile seçilmeli. Lazy Loading ve Eager Loading arasındaki farklara dikkat edilmeli.|
+
+<strong>📌`LINQ, doğru kullanıldığında oldukça güçlü ve esnek bir araçtır; dolayısıyla bu tür soruları anlamak ve uygulamak, hem teorik hem de pratik bilgiyi içerir.`</strong>
+
+## Ders 17 Case Görevi
+![Ekran görüntüsü 2024-11-27 094959](https://github.com/user-attachments/assets/7988bfbf-a626-44a9-bae2-6cde36e52a7c)
 
