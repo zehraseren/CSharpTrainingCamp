@@ -58,12 +58,18 @@
     <Compile Include="Abstract\IOrderDal.cs" />
     <Compile Include="Abstract\IProductDal.cs" />
     <Compile Include="Context\CampContext.cs" />
+    <Compile Include="EntityFramework\EfAdminDal.cs" />
+    <Compile Include="EntityFramework\EfCategoryDal.cs" />
+    <Compile Include="EntityFramework\EfCustomerDal.cs" />
+    <Compile Include="EntityFramework\EfOrderDal.cs" />
+    <Compile Include="EntityFramework\EfProductDal.cs" />
     <Compile Include="Migrations\202411101548407_mig1.cs" />
     <Compile Include="Migrations\202411101548407_mig1.Designer.cs">
       <DependentUpon>202411101548407_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\GenericRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSTC301.EntityLayer\CSTC301.EntityLayer.csproj">

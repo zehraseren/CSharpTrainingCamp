@@ -513,7 +513,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblRomeGuideName.AutoSize = true;
             this.lblRomeGuideName.Font = new System.Drawing.Font("Calibri", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblRomeGuideName.Location = new System.Drawing.Point(43, 88);
+            this.lblRomeGuideName.Location = new System.Drawing.Point(39, 89);
             this.lblRomeGuideName.Name = "lblRomeGuideName";
             this.lblRomeGuideName.Size = new System.Drawing.Size(43, 35);
             this.lblRomeGuideName.TabIndex = 2;

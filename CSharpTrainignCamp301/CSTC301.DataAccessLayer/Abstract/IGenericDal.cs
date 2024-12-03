@@ -6,7 +6,7 @@ namespace CSTC301.DataAccessLayer.Abstract
     {
         void Insert(T t);
         void Update(T t);
-        void Delete(int id);
+        void Delete(T t);
         T GetById(int id);
         List<T> GetList();
     }
