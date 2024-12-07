@@ -95,6 +95,14 @@
       <Project>{cc4247af-f76b-48a5-98c3-54033233f285}</Project>
       <Name>CSTC301.BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CSTC301.DataAccessLayer\CSTC301.DataAccessLayer.csproj">
+      <Project>{C4BD800E-8596-49DD-B1C9-080E2C4530D9}</Project>
+      <Name>CSTC301.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CSTC301.EntityLayer\CSTC301.EntityLayer.csproj">
+      <Project>{938FFDB5-BB98-49F7-98D9-B96D945E80D1}</Project>
+      <Name>CSTC301.EntityLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
