@@ -29,6 +29,11 @@ namespace CSTC301.BusinessLayer.Concrete
             return _productDal.GetById(id);
         }
 
+        public List<object> TGetProductWithCategory()
+        {
+            return _productDal.GetProductWithCategory();
+        }
+
         public void TInsert(Product t)
         {
             _productDal.Insert(t);
