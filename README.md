@@ -4,8 +4,6 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 
 # Repo İçerikleri:
 
-## ✨MODÜL 101
-
 ## 1. Temel Konular | Main Subjects 📚
 + Bu projede yazdırma komutları, string ve int değişkenler bahsedilmiştir. `Console.WriteLine()` yazdırma komutu ile değişkenlerin ekrana yazılışı gösterilmiştir.
 + Temel C# yapılarını ve veri tiplerini anlamak, programlamanın temellerini kavramak için kritik öneme sahiptir.📖
@@ -33,8 +31,6 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 ## 7. Foreach Döngüsü | Foreach Loop 🔂
 + Bu projede foreach döngüsünden bahsedilmiştir ve önceki konular da baz alarak örnek yapılmıştır.
 + Foreach döngüsü, koleksiyonlar üzerinde basit ve etkili bir şekilde iterasyon yaparak kodun okunabilirliğini artırır.🔍
-
-## ✨MODÜL 201
 
 ## 8. Metotlar | Methods 🛠️
 + Bu projede geriye değer döndüren ve geriye değer döndürmeyen metotlardan bahsedilmiştir. Bu iki tür metota özgü örnekler yapılmıştır.
@@ -147,7 +143,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 
 <strong>📌`Her iki kavram, farklı alanlarda düzenlilik ve yapı kazandırmayı hedefler. Migration, veri yönetimi odaklıdır; Abstract, yazılımın tasarımı ve modülerliği ile ilgilidir.`</strong>
 
-## 14. Nesne Yönelimli Programlama Modülü | ORM Structure: Entity Framework DbFirst & Create Model 🛠️
+## 14. ORM Structure: Entity Framework DbFirst & Create Model 🛠️
 + Entity Framework DbFirst ve Model Oluşturma, mevcut bir veritabanından model ve context sınıfları oluşturarak veritabanı ile kod arasında bir bağlantı sağlar. Bu yöntem, veritabanı tasarımının uygulama kodundan önce yapıldığı senaryolarda kullanılır.
 
 ### DbFirst Nedir?
@@ -174,7 +170,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 
 <strong>📌`DbFirst, mevcut bir veritabanını projeye entegre etmek için ideal bir yöntemdir ve özellikle büyük projelerde zamandan tasarruf sağlar.`</strong>
 
-## 15. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Project 🛠️
+## 15. Entity Framework Methods & Project 🛠️
 Entity Framework (EF), bir .NET nesne-ilişkisel eşleme (ORM) aracıdır ve veritabanı işlemlerini daha kolay bir şekilde yapılmasına olanak saplar. Entity Framework, veritabanı ile etkileşim kurarken kullanılan çeşitli yöntemler sunar.
 
 ###### İşte en sık kullanılan EF yöntemlerinin kısa açıklamaları:
@@ -208,10 +204,10 @@ Entity Framework (EF), bir .NET nesne-ilişkisel eşleme (ORM) aracıdır ve ver
 
 <strong>📌`Entity Framework yöntemleri ile hem basit hem de karmaşık veritabanı işlemlerini kolayca gerçekleştirebilirsiniz. Bu yöntemler LINQ ile birlikte güçlü bir araç seti sunar.`</strong>
 
-## 16. Nesne Yönelimli Programlama Modülü | Entity Framework: Project 🛠️
+## 16. Entity Framework: Project 🛠️
 CRUD işlemleri uygulanarak Location tablosundaki işlemler yapıldı.
 
-## 17. Nesne Yönelimli Programlama Modülü | Entity Framework Methods & Linq 🛠️
+## 17. Entity Framework Methods & Linq 🛠️
 LINQ (Language Integrated Query), C# ve .NET dillerinde kullanılan güçlü bir sorgulama mekanizmasıdır. LINQ kullanılarak veritabanları, koleksiyonlar, XML ve diğer veri kaynakları üzerinde kolayca sorgulamalar yapılabilir.
 
 ###### İşte LINQ ile ilgili sık sorulan sorular ve bunlara dair kısa açıklamalar:
@@ -254,3 +250,243 @@ LINQ (Language Integrated Query), C# ve .NET dillerinde kullanılan güçlü bir
 ## Ders 17 Case Görevi
 ![Ekran görüntüsü 2024-11-27 094959](https://github.com/user-attachments/assets/7988bfbf-a626-44a9-bae2-6cde36e52a7c)
 
+## 18. EntityState Komutları, Generic Repostory Class & EF Class 🛠️
+### EntityState Komutları 🗂️
+EntityState, Entity Framework'te bir nesnenin veritabanındaki durumunu kontrol etmek ve işlem yapmak için kullanılır.
+
++ `Added` ➡️ Veritabanına bir yeni kayıt olarak eklenmesi (INSERT).
++ `Modified` ➡️ Veritabanında güncelleme işlemi yapılması (UPDATE).
++ `Deleted` ➡️ Veritabanından silinmesi (DELETE).
++ `Unchanged` ➡️ Veritabanında hiçbir işlem yapılmaması.
++ `Detached` ➡️ Varlık bağımsız bırakılır, bellekten silinmemesi.
+
+<strong>📌`Not: EntityState, SaveChanges() çağrıldığında uygulanır. Bu, bir varlığın ne şekilde işleneceğini belirler ve veritabanına uygun işlemleri yansıtır.`</strong>
+
+### Generic Repository Class 📦
++ Nedir?
+  - Tüm CRUD işlemleri için tekrar eden kodları azaltan, genel bir yapı sağlar.
+  - `TEntity` gibi bir tür parametresi ile herhangi bir tablo veya varlık üzerinde çalışabilir.
+
++ Avantajları
+  - Tekrarı önler.
+  - Kodunuzu daha temiz ve yönetilebilir hale getirir.
+  - Tüm veri erişim işlemleri tek bir yapı altında toplanır.
+
++ ###### Örnek:
+```
+public interface IGenericRepository<T> where T : class
+{
+    Task<IEnumerable<T>> GetAllAsync();
+    Task<T> GetByIdAsync(int id);
+    Task AddAsync(T entity);
+    void Update(T entity);
+    void Delete(T entity);
+}
+```
+
+### Entity Framework (FE) Class ⚙️
++ Nedir?
+  - Entity Framework (EF), .NET için bir ORM (Object-Relational Mapping) aracıdır. Veritabanı işlemlerini C# nesneleriyle çalışarak kolaylaştırır.
+
++ EF Sınıflarının Görevleri
+  - `DbContext:` Veritabanı bağlantısı ve işlemleri için ana sınıf.
+  - `DbSet:` Belirli bir tabloyu temsil eder ve sorgulama/güncelleme işlemleri için kullanılır.
++ ###### Örnek EF Class
+```
+public class AppDbContext : DbContext
+{
+    public DbSet<Product> Products { get; set; }
+    public DbSet<Category> Categories { get; set; }
+    
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("YourConnectionString");
+    }
+}
+```
+
+<strong>📌`Not: Generic Repository Class, EF ile birlikte çalışarak veritabanı işlemlerini daha düzenli ve verimli bir hale getirir.`</strong>
+
+## 19. Business Katmanı & Logic Kurallar 🛠️
+### Business Katmanı 🏢
++ Nedir?
+  - İş kurallarını ve mantığını içeren uygulama katmanıdır. Uygulamanın veri işleme ve iş kurallarını (business rules) yönetir.
+
++ Görevleri
+  - Veritabanından gelen veriyi işleyip kontrol etmek.
+  - İş kurallarını uygulayarak veri akışını sağlamak.
+  - UI (Kullanıcı Arayüzü) ve Data Access (Veri Katmanı) arasında bir köprü oluşturmak.
+    
+<strong>📌`Not: Business katmanı, veritabanı işlemlerinden bağımsızdır ve yalnızca iş mantığına odaklanır.`</strong>
+
+### Logic Kurallar ⚖️
++ Uygulama içinde belirli durumlar için tanımlanan iş mantıkları ve kurallar bütünüdür.
++ Örneğin:
+  - Kullanıcıya ait verilerin belirli kriterlere göre doğrulanması.
+  - İndirimlerin yalnızca belirli koşullarda uygulanması.
+  - Kullanıcı rolleri bazında yetkilendirme.
+
++ ###### Örnek Logic Kurallar
+```
+if (order.TotalAmount > 1000)
+{
+    ApplyDiscount(order, 10); // 1000 TL üzeri siparişlere %10 indirim uygula
+}
+
+if (!user.IsActive)
+{
+    throw new Exception("Kullanıcı aktif değil!"); // Aktif olmayan kullanıcılar için hata fırlat
+}
+```
+
+<strong>📌`Not: Logic kurallar, hem veritabanından gelen veriler üzerinde kontrol sağlar hem de uygulamanın doğru çalışmasını garanti eder.`</strong>
+
+### Business Katmanı ile Logic Kuralların Uyumu 🤝
+Business katmanı, logic kurallarını uygulayarak iş süreçlerini yürütür. Bu yapıyı kullanarak:
++ Kod tekrarını önlenir.
++ İş kurallarını daha kolay yönetilir.
++ Uygulamanız daha okunabilir ve modüler hale gelir.
+
+###### Örnek Business Katmanı
+```
+public class OrderManager : IOrderService
+{
+    public void PlaceOrder(Order order)
+    {
+        if (order.TotalAmount <= 0)
+        {
+            throw new Exception("Sipariş tutarı sıfırdan büyük olmalı!");
+        }
+        // İş kurallarını uygula ve siparişi tamamla
+    }
+}
+```
+
+## 20. Dependency Injection (DI) 🛠️
++ Nedir?
+  - Dependency Injection, bir sınıfın bağımlılıklarını (örneğin, başka bir sınıfı veya servisi) doğrudan kendisinin oluşturması yerine, dışarıdan almasını sağlayan bir tasarım desenidir.
+  
++ Avantajları
+  - `Gevşek Bağlılık (Loose Coupling):` Sınıflar birbirine sıkı sıkıya bağlı olmaz.
+  - `Test Edilebilirlik:` Bağımlılıkların kolayca değiştirilmesi, birimleri daha kolay test edilebilir hale getirir.
+  - `Esneklik:` Uygulamanın genişletilmesi ve bakımı kolaylaşır.
+ 
+#### DI Türleri
+1. `Constructor Injection:` Bağımlılıklar sınıfın kurucusuna (`constructor`) enjekte edilir.
+```
+public class OrderManager
+{
+    private readonly IOrderService _orderService;
+
+    public OrderManager(IOrderService orderService)
+    {
+        _orderService = orderService;
+    }
+}
+```
+
+2. `Property Injection:` Bağımlılıklar bir özelliğe (`property`) enjekte edilir.
+```
+public class OrderManager
+{
+    public IOrderService OrderService { get; set; }
+}
+```
+
+3. `Method Injection:` Bağımlılıklar bir metoda enjekte edilir.
+```
+public void PlaceOrder(IOrderService orderService)
+{
+    orderService.ProcessOrder();
+}
+```
+
+<strong>📌`Not: Dependency Injection, modern uygulama geliştirmede modülerlik, esneklik ve test edilebilirlik sağlamak için vazgeçilmez bir yaklaşımdır.`</strong>
+
+## 21. Entity'e Özgü Metot Yazmak 🛠️
+
+## 22. - 23. C# İle Dapper Kullanımı 🛠️
++ Nedir?
+  - Dapper, .NET platformu için hafif, hızlı ve esnek bir Micro ORM (Object-Relational Mapper) kütüphanesidir.
+  - SQL sorgularını kullanarak veritabanı işlemlerini daha kolay ve performanslı bir şekilde yapmanıza olanak tanır.
+
++ Özellikleri
+  - `Hafif:` Minimal bir kod ile çalışır, ek yük oluşturmaz.
+  - `Hızlı:` Performans odaklıdır ve ham ADO.NET kadar hızlıdır.
+  - `Esnek:` SQL sorgularını doğrudan yazmanıza izin verir, böylece tam kontrol sağlar.
+  - `Kolay Entegrasyon:` Mevcut projelere hızlıca eklenebilir.
+
++ Avantajları
+  - Daha hızlı ve esnek CRUD işlemleri.
+  - ORM'lerin karmaşıklığından uzak, kontrolün sizde olduğu bir yapı.
+  - Basit kurulum ve kullanım.
+  - Desteklediği veri tiplerini otomatik olarak eşler.
+
+###### Dapper Kullanım Örneği
+```
+using Dapper;
+using System.Data.SqlClient;
+
+public class ProductRepository
+{
+    private readonly string _connectionString = "YourConnectionString";
+
+    public IEnumerable<Product> GetAllProducts()
+    {
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            string sql = "SELECT * FROM Products";
+            return connection.Query<Product>(sql);
+        }
+    }
+
+    public void AddProduct(Product product)
+    {
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            string sql = "INSERT INTO Products (Name, Price) VALUES (@Name, @Price)";
+            connection.Execute(sql, product);
+        }
+    }
+}
+```
+
+#### Dapper vs. Entity Framework ⚖️
+|Özellik|Dapper|Entity Framework|
+|-------|------|----------------|
+|Performans|Daha hızlı|ORM katmanı nedeniyle daha yavaş|
+|SQL Kontrolü|Tam kontrol sağlar|Daha az kontrol|
+|Öğrenme Eğrisi|Basit ve hızlı|Daha karmaşık|
+|Özelleştirme|Kolayca özelleştirilebilir|ORM yapısına bağlı kalır|
+
+<strong>📌`Dapper, basit ve performans odaklı bir çözüm arayanlar için ideal bir seçenektir. Özellikle büyük ve karmaşık ORM yapıları yerine daha fazla kontrol isteyen projelerde tercih edilir.`</strong>
+
+## 24. - 25. C# ile MongoDb 🍃
++ Nedir?
+  - MongoDB, açık kaynaklı ve belge tabanlı bir NoSQL veritabanı yönetim sistemidir. Geleneksel ilişkisel veritabanlarından farklı olarak, verileri JSON benzeri belgeler (`document`) şeklinde depolar.
+
++ Özellikleri 🌟
+  - `Esnek Yapı:` Şeması olmayan bir yapıya sahiptir, bu nedenle veriler dinamik bir şekilde depolanabilir.
+  - `Yüksek Performans:` Büyük veri kümelerinde hızlı okuma ve yazma işlemleri sağlar.
+  - `Yatay Ölçeklenebilirlik:` Büyük veri setlerini işlemek için kolayca ölçeklenebilir.
+  - `Zengin Sorgu Desteği:` Verileri esnek sorgularla filtreleyebilir ve analiz edebilirsiniz.
+
++ Avantajları 🚀
+  - `Hızlı Geliştirme:` Şema tanımlama zorunluluğu olmadığı için değişiklikler daha kolay uygulanır.
+  - `Esneklik:` Farklı türde ve yapıda veriler aynı koleksiyonda saklanabilir.
+  - `JSON Benzeri Belgeler:` Veriler, programlama dillerindeki veri yapıları ile kolayca uyumludur.
+
++ Temel Kavramlar 🗂️
+  - `Database:` Birden fazla koleksiyonun saklandığı ana yapı.
+  - `Collection (Koleksiyon):` Tabloya benzer, belgelerin saklandığı yapı.
+  - `Document (Belge):` JSON formatına benzer, veri kayıtlarını tutar. Örneğin:
+  ```
+  {
+    "_id": "1",
+    "name": "John Doe",
+    "age": 30,
+    "skills": ["C#", "MongoDB"]
+  }
+  ```
+
+<strong>📌`MongoDB, özellikle büyük ve hızlı değişen veri setleri ile çalışmak için mükemmel bir seçimdir. Esneklik ve ölçeklenebilirlik isteyen projelerde sıkça kullanılır.`</strong>
