@@ -461,7 +461,7 @@ public class ProductRepository
 
 <strong>📌`Dapper, basit ve performans odaklı bir çözüm arayanlar için ideal bir seçenektir. Özellikle büyük ve karmaşık ORM yapıları yerine daha fazla kontrol isteyen projelerde tercih edilir.`</strong>
 
-## 24. C# ile MongoDb 🍃
+## 24. - 25. C# ile MongoDb 🍃
 + Nedir?
   - MongoDB, açık kaynaklı ve belge tabanlı bir NoSQL veritabanı yönetim sistemidir. Geleneksel ilişkisel veritabanlarından farklı olarak, verileri JSON benzeri belgeler (`document`) şeklinde depolar.
 
