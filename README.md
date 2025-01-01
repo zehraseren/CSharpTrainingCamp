@@ -87,7 +87,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + `Soyutlama:` Veritabanına erişimle ilgili mantığı iş mantığından ayırır.
 + `Performans Optimizasyonu:` Verimli sorgular oluşturarak uygulamanın performansını artırır.
 
-##### Avantajları:
+##### Avantajları 🚀
 + Kodun tekrar kullanılabilirliğini artırır.
 + Veri erişimini yönetmek için merkezi bir yapı sunar.
 + Veritabanı değişikliklerini uygulamanın geri kalanından izole eder.
@@ -100,7 +100,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + `Tablo-Model Eşleştirmesi:` Veritabanındaki tablolarla, uygulama modellerini eşleştirir.
 + `Sorgular ve İşlemler:` Veritabanı sorgularının yürütülmesini ve değişikliklerin kaydedilmesini sağlar.
 
-##### Avantajları:
+##### Avantajları 🚀
 + Veritabanı işlemlerinin kolayca kodlanmasını sağlar.
 + Birden çok veri kaynağına bağlanmak için genişletilebilir.
 + ORM araçlarının sağladığı avantajlardan yararlanır.
@@ -120,7 +120,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + `Değişiklik Kaydı:` Tabloların eklenmesi, kolonların değiştirilmesi veya ilişkilerin düzenlenmesi gibi işlemleri kaydeder.
 + `Geri Alma:` Uygulanan değişiklikler gerektiğinde geri alınabilir.
 
-##### Avantajları:
+##### Avantajları 🚀
 + Kod ve veritabanı arasında senkronizasyon sağlar.
 + Veritabanı değişikliklerini ekip içerisinde izlenebilir ve yönetilebilir kılar.
 + Otomatik şema oluşturma ve güncelleme sağlar.
@@ -132,7 +132,7 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + `Tanım:` Kendi başına örneklenemez (instance oluşturulamaz). Alt sınıflara temel bir yapı sağlar.
 + `Görev:` Alt sınıflarda uygulanması gereken metotları ve ortak özellikleri tanımlar.
 
-##### Avantajları:
+##### Avantajları 🚀
 + Kodun tekrarını önler ve ortak davranışları merkezileştirir.
 + Polimorfizm (çok biçimlilik) sağlar.
 + Alt sınıflar arasında tutarlılığı zorunlu kılar.
@@ -252,7 +252,7 @@ LINQ (Language Integrated Query), C# ve .NET dillerinde kullanılan güçlü bir
 
 ## 18. EntityState Komutları, Generic Repostory Class & EF Class 🛠️
 ### EntityState Komutları 🗂️
-EntityState, Entity Framework'te bir nesnenin veritabanındaki durumunu kontrol etmek ve işlem yapmak için kullanılır.
++ EntityState, Entity Framework'te bir nesnenin veritabanındaki durumunu kontrol etmek ve işlem yapmak için kullanılır.
 
 + `Added` ➡️ Veritabanına bir yeni kayıt olarak eklenmesi (INSERT).
 + `Modified` ➡️ Veritabanında güncelleme işlemi yapılması (UPDATE).
@@ -267,7 +267,7 @@ EntityState, Entity Framework'te bir nesnenin veritabanındaki durumunu kontrol 
   - Tüm CRUD işlemleri için tekrar eden kodları azaltan, genel bir yapı sağlar.
   - `TEntity` gibi bir tür parametresi ile herhangi bir tablo veya varlık üzerinde çalışabilir.
 
-+ Avantajları
++ Avantajları 🚀
   - Tekrarı önler.
   - Kodunuzu daha temiz ve yönetilebilir hale getirir.
   - Tüm veri erişim işlemleri tek bir yapı altında toplanır.
@@ -363,10 +363,10 @@ public class OrderManager : IOrderService
 ```
 
 ## 20. Dependency Injection (DI) 🛠️
-+ Nedir?
+### Nedir?
   - Dependency Injection, bir sınıfın bağımlılıklarını (örneğin, başka bir sınıfı veya servisi) doğrudan kendisinin oluşturması yerine, dışarıdan almasını sağlayan bir tasarım desenidir.
   
-+ Avantajları
+### Avantajları 🚀
   - `Gevşek Bağlılık (Loose Coupling):` Sınıflar birbirine sıkı sıkıya bağlı olmaz.
   - `Test Edilebilirlik:` Bağımlılıkların kolayca değiştirilmesi, birimleri daha kolay test edilebilir hale getirir.
   - `Esneklik:` Uygulamanın genişletilmesi ve bakımı kolaylaşır.
@@ -404,23 +404,79 @@ public void PlaceOrder(IOrderService orderService)
 <strong>📌`Not: Dependency Injection, modern uygulama geliştirmede modülerlik, esneklik ve test edilebilirlik sağlamak için vazgeçilmez bir yaklaşımdır.`</strong>
 
 ## 21. Entity'e Özgü Metot Yazmak 🛠️
++ Entity Framework'te (EF) her entity için özelleştirilmiş metotlar yazarak, iş ihtiyaçlarına göre veri işlemleri gerçekleştirebilir. Bu metotlar, genellikle repository veya service sınıflarında tanımlanır ve Entity Framework'ün sunduğu güçlü sorgulama özelliklerinden yararlanır.
++ ###### Örnek: Belirli bir kategorideki ürünleri listeleme, en çok satan ürünleri getirme gibi.
 
-## 22. - 23. C# İle Dapper Kullanımı 🛠️
-+ Nedir?
-  - Dapper, .NET platformu için hafif, hızlı ve esnek bir Micro ORM (Object-Relational Mapper) kütüphanesidir.
-  - SQL sorgularını kullanarak veritabanı işlemlerini daha kolay ve performanslı bir şekilde yapmanıza olanak tanır.
+### Kod Örneği 🧑‍💻📋
+1. Varlığa Özgü Bir Metot Tanımlama
+###### Amaç: Belirli bir kategoriye ait ürünleri getirme.
+```
+public class ProductRepository
+{
+    private readonly AppDbContext _context;
 
-+ Özellikleri
-  - `Hafif:` Minimal bir kod ile çalışır, ek yük oluşturmaz.
-  - `Hızlı:` Performans odaklıdır ve ham ADO.NET kadar hızlıdır.
-  - `Esnek:` SQL sorgularını doğrudan yazmanıza izin verir, böylece tam kontrol sağlar.
-  - `Kolay Entegrasyon:` Mevcut projelere hızlıca eklenebilir.
+    public ProductRepository(AppDbContext context)
+    {
+        _context = context;
+    }
 
-+ Avantajları
-  - Daha hızlı ve esnek CRUD işlemleri.
-  - ORM'lerin karmaşıklığından uzak, kontrolün sizde olduğu bir yapı.
-  - Basit kurulum ve kullanım.
-  - Desteklediği veri tiplerini otomatik olarak eşler.
+    // Belirli bir kategorideki ürünleri getir
+    public List<Product> GetProductsByCategory(int categoryId)
+    {
+        return _context.Products
+            .Where(p => p.CategoryId == categoryId)
+            .ToList();
+    }
+}
+```
+
+2. Karmaşık İşlemler İçin Metot Yazma
+###### Amaç: Stok durumu azalan ürünleri listeleme.
+```
+public List<Product> GetLowStockProducts(int threshold)
+{
+    return _context.Products
+        .Where(p => p.Stock < threshold)
+        .OrderBy(p => p.Stock)
+        .ToList();
+}
+```
+
+### Metotların Örnek Çağrımı 🖥️
+```
+var productService = new ProductService(new ProductRepository(context));
+
+// Belirli kategori için ürünleri getir
+var categoryProducts = productService.GetProductsByCategory(3);
+
+// Stok seviyesi düşük ürünleri getir
+var lowStockProducts = productService.GetLowStockProducts(10);
+```
+
+### Özet 🗂️
++ Entity'ye özgü metotlar, iş ihtiyaçlarına uygun, temiz ve yönetilebilir kod yazmayı kolaylaştırır. Bu metotlarla birlikte:
+  - Karmaşık sorgular bir kez yazılır ve tekrar kullanılabilir hale gelir.
+  - Veritabanı işlemleri daha düzenli bir şekilde yönetilir.
+  - Performans optimizasyonu sağlanır.
+
+<strong>📌`Bu metotlar, hem kod kalitesini artırır hem de uygulamanın bakımını kolaylaştırır. 🚀`</strong>
+
+## 22. - 23. C# İle Dapper Kullanımı 📜
+### Nedir?
++ Dapper, .NET platformu için hafif, hızlı ve esnek bir Micro ORM (Object-Relational Mapper) kütüphanesidir.
++ SQL sorgularını kullanarak veritabanı işlemlerini daha kolay ve performanslı bir şekilde yapmanıza olanak tanır.
+
+### Özellikleri 🌟
++ `Hafif:` Minimal bir kod ile çalışır, ek yük oluşturmaz.
++ `Hızlı:` Performans odaklıdır ve ham ADO.NET kadar hızlıdır.
++ `Esnek:` SQL sorgularını doğrudan yazmanıza izin verir, böylece tam kontrol sağlar.
++ `Kolay Entegrasyon:` Mevcut projelere hızlıca eklenebilir.
+
+### Avantajları 🚀
++ Daha hızlı ve esnek CRUD işlemleri.
++ ORM'lerin karmaşıklığından uzak, kontrolün sizde olduğu bir yapı.
++ Basit kurulum ve kullanım.
++ Desteklediği veri tiplerini otomatik olarak eşler.
 
 ###### Dapper Kullanım Örneği
 ```
@@ -462,24 +518,24 @@ public class ProductRepository
 <strong>📌`Dapper, basit ve performans odaklı bir çözüm arayanlar için ideal bir seçenektir. Özellikle büyük ve karmaşık ORM yapıları yerine daha fazla kontrol isteyen projelerde tercih edilir.`</strong>
 
 ## 24. - 25. C# ile MongoDb 🍃
-+ Nedir?
-  - MongoDB, açık kaynaklı ve belge tabanlı bir NoSQL veritabanı yönetim sistemidir. Geleneksel ilişkisel veritabanlarından farklı olarak, verileri JSON benzeri belgeler (`document`) şeklinde depolar.
+### Nedir?
++ MongoDB, açık kaynaklı ve belge tabanlı bir NoSQL veritabanı yönetim sistemidir. Geleneksel ilişkisel veritabanlarından farklı olarak, verileri JSON benzeri belgeler (`document`) şeklinde depolar.
 
-+ Özellikleri 🌟
-  - `Esnek Yapı:` Şeması olmayan bir yapıya sahiptir, bu nedenle veriler dinamik bir şekilde depolanabilir.
-  - `Yüksek Performans:` Büyük veri kümelerinde hızlı okuma ve yazma işlemleri sağlar.
-  - `Yatay Ölçeklenebilirlik:` Büyük veri setlerini işlemek için kolayca ölçeklenebilir.
-  - `Zengin Sorgu Desteği:` Verileri esnek sorgularla filtreleyebilir ve analiz edebilirsiniz.
+### Özellikleri 🌟
++ `Esnek Yapı:` Şeması olmayan bir yapıya sahiptir, bu nedenle veriler dinamik bir şekilde depolanabilir.
++ `Yüksek Performans:` Büyük veri kümelerinde hızlı okuma ve yazma işlemleri sağlar.
++ `Yatay Ölçeklenebilirlik:` Büyük veri setlerini işlemek için kolayca ölçeklenebilir.
++ `Zengin Sorgu Desteği:` Verileri esnek sorgularla filtreleyebilir ve analiz edebilirsiniz.
 
-+ Avantajları 🚀
-  - `Hızlı Geliştirme:` Şema tanımlama zorunluluğu olmadığı için değişiklikler daha kolay uygulanır.
-  - `Esneklik:` Farklı türde ve yapıda veriler aynı koleksiyonda saklanabilir.
-  - `JSON Benzeri Belgeler:` Veriler, programlama dillerindeki veri yapıları ile kolayca uyumludur.
+### Avantajları 🚀
++ `Hızlı Geliştirme:` Şema tanımlama zorunluluğu olmadığı için değişiklikler daha kolay uygulanır.
++ `Esneklik:` Farklı türde ve yapıda veriler aynı koleksiyonda saklanabilir.
++ `JSON Benzeri Belgeler:` Veriler, programlama dillerindeki veri yapıları ile kolayca uyumludur.
 
-+ Temel Kavramlar 🗂️
-  - `Database:` Birden fazla koleksiyonun saklandığı ana yapı.
-  - `Collection (Koleksiyon):` Tabloya benzer, belgelerin saklandığı yapı.
-  - `Document (Belge):` JSON formatına benzer, veri kayıtlarını tutar. Örneğin:
+### Temel Kavramlar 🗂️
++ `Database:` Birden fazla koleksiyonun saklandığı ana yapı.
++ `Collection (Koleksiyon):` Tabloya benzer, belgelerin saklandığı yapı.
++ `Document (Belge):` JSON formatına benzer, veri kayıtlarını tutar. Örneğin:
   ```
   {
     "_id": "1",
@@ -490,3 +546,69 @@ public class ProductRepository
   ```
 
 <strong>📌`MongoDB, özellikle büyük ve hızlı değişen veri setleri ile çalışmak için mükemmel bir seçimdir. Esneklik ve ölçeklenebilirlik isteyen projelerde sıkça kullanılır.`</strong>
+
+## 26. C# ile PostgreSQL 🐘
+### Nedir? 
++ PostgreSQL, güçlü bir açık kaynaklı ilişkisel veritabanı yönetim sistemidir (RDBMS). Yüksek performans, geniş özellik seti ve esneklik sunar.
+
+### Özellikleri 🌟
++ `ACID Uyumluluğu:` Veri bütünlüğünü ve güvenilirliğini sağlar.
++ `JSON ve XML Desteği:` Yapılandırılmamış verilerle çalışma imkanı sunar.
++ `Gelişmiş Sorgu Desteği:` Karmaşık sorguları kolayca çalıştırabilir.
++ `Hata Toleransı:` Güçlü kurtarma mekanizmaları sayesinde güvenilirlik sunar.
++ `Uzantılar:` PostGIS gibi uzantılarla işlevsellik artırılabilir.
+
+### Avantaları 🚀
++ `Performanslı:` Büyük veri kümelerinde dahi etkili çalışır.
++ `Esnek:` Geleneksel tablolardan JSON belgelerine kadar farklı veri türlerini destekler.
++ `Açık Kaynak:` Tümüyle ücretsiz ve topluluk desteklidir.
++ `Platform Bağımsız:` Çeşitli işletim sistemlerinde çalışabilir.
+
+### Temel Kavramlar 🗂️
++ `Tablo (Table):` Verilerin satır ve sütunlar halinde düzenlendiği yapı.
++ `Satır (Row):` Verinin tek bir kaydını temsil eder.
++ `Sütun (Column):` Verilerin türünü veya kategorisini belirler.
++ `Primary Key:` Her satırı benzersiz şekilde tanımlayan sütun.
++ `Foreign Key:` İki tablo arasındaki ilişkiyi tanımlar.
+
+### Kullanım 🛠️
++ Veritabanı Oluşturma
+```
+CREATE DATABASE exampledb;
+```
+
++ Tablo Oluşturma
+```
+CREATE TABLE users (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100),
+    age INT
+);
+```
+
++ Veri Ekleme
+```
+INSERT INTO users (name, age) VALUES ('John Doe', 30);
+```
+
++ Veri Silme
+```
+DELETE FROM users WHERE id = 1;
+```
+
++ Veri Sorgulama
+```
+SELECT * FROM users;
+```
+
++ Tablo Güncelleme
+```
+UPDATE users SET age = 31 WHERE id = 1;
+```
+
+### Neden PostgreSQL? 🧐
++ Büyük veri projelerinde etkili.
++ Yüksek güvenlik ve veri bütünlüğü sağlıyor.
++ Topluluk ve kurumsal destek bir arada.
+
+<strong>📌`PostgreSQL, hem esnek hem de güçlü yapısıyla modern uygulamalar için mükemmel bir seçimdir!`</strong>
