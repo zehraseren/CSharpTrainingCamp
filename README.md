@@ -517,7 +517,7 @@ public class ProductRepository
 
 <strong>📌`Dapper, basit ve performans odaklı bir çözüm arayanlar için ideal bir seçenektir. Özellikle büyük ve karmaşık ORM yapıları yerine daha fazla kontrol isteyen projelerde tercih edilir.`</strong>
 
-## 24. - 25. C# ile MongoDb 🍃
+## 24. | 25. C# ile MongoDb 🍃
 ### Nedir?
 + MongoDB, açık kaynaklı ve belge tabanlı bir NoSQL veritabanı yönetim sistemidir. Geleneksel ilişkisel veritabanlarından farklı olarak, verileri JSON benzeri belgeler (`document`) şeklinde depolar.
 
@@ -547,7 +547,7 @@ public class ProductRepository
 
 <strong>📌`MongoDB, özellikle büyük ve hızlı değişen veri setleri ile çalışmak için mükemmel bir seçimdir. Esneklik ve ölçeklenebilirlik isteyen projelerde sıkça kullanılır.`</strong>
 
-## 26. C# ile PostgreSQL 🐘
+## 26. | 27. C# ile PostgreSQL 🐘
 ### Nedir? 
 + PostgreSQL, güçlü bir açık kaynaklı ilişkisel veritabanı yönetim sistemidir (RDBMS). Yüksek performans, geniş özellik seti ve esneklik sunar.
 
