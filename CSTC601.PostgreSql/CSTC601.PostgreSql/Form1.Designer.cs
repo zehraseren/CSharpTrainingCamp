@@ -104,11 +104,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Calibri", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(33, 111);
+            this.label3.Location = new System.Drawing.Point(28, 111);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 21);
+            this.label3.Size = new System.Drawing.Size(121, 21);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Müşteri Soyadı";
+            this.label3.Text = "Müşteri Soyadı:\r\n";
             // 
             // txtCustomerSurname
             // 
