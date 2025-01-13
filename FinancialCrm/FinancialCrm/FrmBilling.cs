@@ -75,7 +75,7 @@ namespace FinancialCrm
         private void btnBanksForm_Click(object sender, EventArgs e)
         {
             FrmBanks banks = new FrmBanks();
-            banks.Show();
+            banks.Close();
             this.Hide();
         }
     }
