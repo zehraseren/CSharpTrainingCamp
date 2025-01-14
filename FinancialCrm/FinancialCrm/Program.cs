@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace FinancialCrm
@@ -16,7 +13,7 @@ namespace FinancialCrm
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmDashboard());
+            Application.Run(new FrmLogin());
         }
     }
 }

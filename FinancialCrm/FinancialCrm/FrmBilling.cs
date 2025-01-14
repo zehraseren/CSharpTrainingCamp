@@ -18,6 +18,7 @@ namespace FinancialCrm
             var values = db.Bills.ToList();
             dataGridView1.DataSource = values;
         }
+
         private void btnBillList_Click(object sender, EventArgs e)
         {
             var values = db.Bills.ToList();
@@ -60,8 +61,8 @@ namespace FinancialCrm
             decimal amount = decimal.Parse(txtBillAmount.Text);
             string period = txtBillPeriod.Text;
             int id = int.Parse(txtBillId.Text);
-            var updatedValue = db.Bills.Find(id);
 
+            var updatedValue = db.Bills.Find(id);
             updatedValue.BillTitle = title;
             updatedValue.BillAmount = amount;
             updatedValue.BillPeriod = period;
@@ -72,11 +73,57 @@ namespace FinancialCrm
             dataGridView1.DataSource = values;
         }
 
+        #region Yan Panel Butonları
+
         private void btnBanksForm_Click(object sender, EventArgs e)
         {
             FrmBanks banks = new FrmBanks();
-            banks.Close();
+            banks.Show();
             this.Hide();
         }
+
+        private void btnBankProcessFrm_Click(object sender, EventArgs e)
+        {
+            FrmBankProcesses bankProcesses = new FrmBankProcesses();
+            bankProcesses.Show();
+            this.Hide();
+        }
+
+        private void btnBillsFrm_Click(object sender, EventArgs e)
+        {
+            FrmBilling bills = new FrmBilling();
+            bills.Show();
+            this.Hide();
+        }
+
+        private void btnSpendingsFrm_Click(object sender, EventArgs e)
+        {
+            FrmSpendings spendings = new FrmSpendings();
+            spendings.Show();
+            this.Hide();
+        }
+
+        private void btnDashboardFrm_Click(object sender, EventArgs e)
+        {
+            FrmDashboard dashboard = new FrmDashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void btnSettingsFrm_Click(object sender, EventArgs e)
+        {
+            FrmSettings settings = new FrmSettings();
+            settings.Show();
+            this.Hide();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            FrmLogin login = new FrmLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        #endregion
     }
 }
