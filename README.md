@@ -612,3 +612,38 @@ UPDATE users SET age = 31 WHERE id = 1;
 + Topluluk ve kurumsal destek bir arada.
 
 <strong>📌`PostgreSQL, hem esnek hem de güçlü yapısıyla modern uygulamalar için mükemmel bir seçimdir!`</strong>
+
+## 28. | 29. | 30. CRM Uygulaması 📊
+### CRM nedir?
++ CRM (Customer Relationship Management) uygulamaları, işletmelerin müşteri ilişkilerini yönetmelerine, müşteri memnuniyetini artırmalarına ve satış süreçlerini iyileştirmelerine olanak tanır.
++ Bu tür uygulamalar, şirketlerin müşterileriyle daha etkili bir şekilde iletişim kurmalarına, satış fırsatlarını optimize etmelerine ve müşteri sadakatini geliştirmelerine yardımcı olur.
+
+### Temel Özellikler 🔧
+1. `Müşteri Veritabanı Yönetimi:` Müşteri bilgilerini toplama, düzenleme ve erişilebilir hale getirme.
+2. `Satış Yönetimi:` Potansiyel müşteriler, fırsatlar, satış görüşmeleri ve kapanışları izlemek.
+3. `İletişim Takibi:` Müşteri etkileşimlerini ve iletişim geçmişini takip etme.
+4. `Raporlama ve Analiz:` Müşteri davranışlarını analiz etme, satış performansını izleme.
+5. `Görev Yönetimi:` Ekip üyeleri arasında görev dağılımı ve takip işlemleri.
+
+### CRM Uygulamalarının Faydaları 🌟
++ `Verimlilik Artışı:` Otomatikleştirilmiş süreçlerle zaman ve iş gücü tasarrufu sağlar.
++ `Müşteri Memnuniyeti:` Müşterilere kişiselleştirilmiş hizmetler sunarak, memnuniyet ve sadakat artırılır.
++ `İletişim Güçlendirme:` Müşteriyle etkili iletişim kurarak, daha iyi hizmet ve çözüm odaklı yaklaşım benimsenir.
++ `Veri Analizi:` Müşteri verilerini analiz ederek, daha doğru tahminler yapabilir ve iş stratejilerini buna göre şekillendirebilirsiniz.
+
+### Kullanım Alanları 🌍
++ CRM yazılımları, tüm sektörlerdeki işletmeler için uygundur. Özellikle satış, pazarlama ve müşteri hizmetleri departmanlarında yaygın olarak kullanılır. Kapsamlı bir CRM uygulaması, satış sürecinden hizmet sonrası destek süreçlerine kadar her aşamayı yönetebilir.
+
+### CRM Uygulaması Örnekleri 💡
++ `Müşteri İletişimi:` Müşteri ile yapılan e-posta, telefon veya canlı destek görüşmeleri.
++ `Satış Takibi:` Satış fırsatlarının her aşamasında müşteri etkileşimlerinin takibi.
++ `Müşteri Hizmetleri:` Müşteri şikayetleri veya taleplerinin yönetimi.
+
+## Ders 30 Case Görevi
+![Ekran görüntüsü 2025-01-14 061009](https://github.com/user-attachments/assets/d167c1c5-f45a-440b-9961-8e517fa13700)
+![Ekran görüntüsü 2025-01-14 060842](https://github.com/user-attachments/assets/e68e3506-f21c-454c-a82b-73dea62cda86)
+![Ekran görüntüsü 2025-01-14 060906](https://github.com/user-attachments/assets/a68c022e-d46a-47d1-ac74-e3e03ba1c90b)
+![Ekran görüntüsü 2025-01-14 060930](https://github.com/user-attachments/assets/424db72c-cfa9-4827-a380-275441392b81)
+![Ekran görüntüsü 2025-01-14 060949](https://github.com/user-attachments/assets/f31ebb7f-6e7c-40f0-85a9-6ae384245e0a)
+![Ekran görüntüsü 2025-01-14 061057](https://github.com/user-attachments/assets/9bc19a22-0d42-45ce-8fd8-6bb2d3eb77b8)
+![Ekran görüntüsü 2025-01-14 061033](https://github.com/user-attachments/assets/894ab6ea-5916-458c-a1cb-21cd67d3ec24)
