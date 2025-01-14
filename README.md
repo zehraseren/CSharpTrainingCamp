@@ -40,8 +40,6 @@ Murat Yücedağ'ın [C# Eğitim Kampı](https://youtube.com/playlist?list=PLKnjB
 + Bu projede bir C# proje ile SQL veri tabanı uygulamasını Ado.Net kullanarak bağlantı kurulumundan bahsedilmiştir.
 + Veritabanı projeleri, verilerin kalıcı olarak saklanmasını ve işlenmesini sağlayarak dinamik uygulamalar geliştirmede temel bir rol oynar.🗄️
 
-## ✨MODÜL 301
-
 ## 10. Veritaban CRUD | Database CRUD 🚀
 + `Create` ➡️ Veritabanına yeni veri ekleme işlemi. `INSERT INTO` sorgusu veya ORM ile yapılır.
 + `Read` ➡️ Verileri okuma ve görüntüleme işlemi. `SELECT` sorgusu ile gerçekleştirilir.
